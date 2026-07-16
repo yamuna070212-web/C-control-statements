@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+int main()
+{
+    int a, b, choice;
+
+    printf("1.Add\n2.Subtract\n3.Multiply\n4.Divide\n");
+    printf("Enter Choice: ");
+    scanf("%d", &choice);
+
+    printf("Enter Two Numbers: ");
+    scanf("%d%d", &a, &b);
+
+    switch(choice)
+    {
+        case 1:
+            printf("Sum = %d", a + b);
+            break;
+
+        case 2:
+            printf("Difference = %d", a - b);
+            break;
+
+        case 3:
+            printf("Product = %d", a * b);
+            break;
+
+        case 4:
+            printf("Quotient = %d", a / b);
+            break;
+
+        default:
+            printf("Invalid Choice");
+    }
+
+    return 0;
+}
+Sample Output
+1.Add
+2.Subtract
+3.Multiply
+4.Divide
+Enter Choice: 1
+Enter Two Numbers: 20 30
+Sum = 50
