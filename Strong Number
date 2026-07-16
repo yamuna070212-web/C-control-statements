@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main()
+{
+    int n, temp, rem, i;
+    int sum = 0, fact;
+
+    printf("Enter Number: ");
+    scanf("%d", &n);
+
+    temp = n;
+
+    while(n != 0)
+    {
+        rem = n % 10;
+        fact = 1;
+
+        for(i = 1; i <= rem; i++)
+            fact *= i;
+
+        sum += fact;
+        n /= 10;
+    }
+
+    if(sum == temp)
+        printf("Strong Number");
+    else
+        printf("Not a Strong Number");
+
+    return 0;
+}
+Sample Output
+Enter Number: 145
+Strong Number
