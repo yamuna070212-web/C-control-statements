@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    int a, b;
+
+    printf("Enter two numbers: ");
+    scanf("%d%d", &a, &b);
+
+    if(a > b)
+        printf("%d is Greater", a);
+    else
+        printf("%d is Greater", b);
+
+    return 0;
+}
+Sample Output
+Enter two numbers: 10 20
+20 is Greater
